@@ -7,8 +7,15 @@
     padding: 2px 2px 2px 2px;
     border: 2px dashed red;
     list-style: none;
+    font-size: 30px;
+    transition: 0.5s all linear;
+}
+
+#navbar li:hover{
+    background color: red;
+    font-size:40px;
 }
 
 #navbar a{
-    
+    color: #00008B;
 }
