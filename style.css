@@ -23,3 +23,38 @@ h2{
 #linkz a{
     font-family: fantasy;
 }
+
+#author{
+    border: 5px solid black;
+    background-color: green;
+}
+
+#author-t{
+    text-align: center;
+}
+
+#author-i{
+    width: 50%;
+    height: 50%;
+    float: left;
+}
+
+#author-p{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#hobby-t{
+    background-color: blue;
+    text-align: center;
+    tablealign: center;
+}
+
+#hobbies{
+    text-align:center;
+}
+
+#hobby{
+    margin-left: 20%;
+    margin-right: 20%;
+}
