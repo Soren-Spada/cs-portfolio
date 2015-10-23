@@ -1,0 +1,34 @@
+body{
+    background-image: url("https://33.media.tumblr.com/6d22e7bad499565c7625c06c45ab731f/tumblr_mhd77imKtG1s3ohhyo1_400.gif");
+    background-attachment:fixed;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+#navbar{
+    text-align: center;
+}
+
+#navbar li{
+    display: inline-block;
+    padding: 2px 2px 2px 2px;
+    border: 2px dashed red;
+    list-style: none;
+    font-size: 30px;
+    transition: 0.5s all linear;
+}
+
+#navbar li:hover{
+    background-color: red;
+    font-size: 40px;
+}
+
+#navbar a{
+    color: #00008B;
+}
+
+#heading{
+    text-align:center;
+    font-family:cursive;
+    font-style:oblique;
+}

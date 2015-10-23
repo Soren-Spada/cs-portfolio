@@ -20,28 +20,59 @@ h2{
     color: #00008B;
 }
 
-#linkz a{
-    font-family: fantasy;
+
+#toc{
+    margin-right: 75%;
+    padding: 10px;
+    border: 2px dashed black ;
+    background-color: green;
 }
+
+#toc-t{
+    position: relative;
+    left: 10px;
+}
+
 
 #author{
     border: 5px solid black;
     background-color: green;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 5%;
 }
 
 #author-t{
     text-align: center;
 }
 
-#author-i{
-    width: 50%;
-    height: 50%;
-    float: left;
-}
-
 #author-p{
     margin-left: 20%;
     margin-right: 20%;
+}
+
+#author-img{
+    position:absolute;
+    top: 500px;
+    left: 180px;
+}
+
+
+#class{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    background-color: green;
+    border: 5px solid black;
+}
+
+#classes{
+    text-align:center;
+}
+
+#class-l{
+    list-style: none;
+    border: 2px solid black;
 }
 
 #hobby-t{
@@ -57,4 +88,62 @@ h2{
 #hobby{
     margin-left: 20%;
     margin-right: 20%;
+    margin-top: 5%;
+    padding: 10px;
+    background-color: green;
+    border: 5px solid black;
+}
+
+#friend{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    text-align:center;
+    background-color:green;
+    border: 5px solid black;
+}
+
+#friends{
+    position: relative; 
+    right: 200px;
+}
+
+#friend-l{
+    list-style: none;
+}
+
+#oldfriend-l{
+    list-style: none;
+    position: relative;
+    right: 230px;
+}
+
+#purpose{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    padding: 10px;
+    background-color: green;
+    border: 5px solid black;
+}
+
+#purposes{
+    text-align: center;
+}
+
+#link{
+margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    padding: 10px;
+    background-color: green;
+    border: 5px solid black;
+}
+
+#linkz a{
+    font-family: fantasy;
+}
+
+#linkz{
+        text-align:center;
 }
