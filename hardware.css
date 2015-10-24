@@ -47,6 +47,7 @@ body{
 
 #TableofContents{
     color:white;
+    padding-bottom:10px;
 }
 
 .header{
@@ -184,7 +185,101 @@ p{
     margin-top: 3%;
 }
 
+#img{
+    position: absolute;
+    max-width: 35%;
+    max-height: 35%;
+    left: 500px;
+}
+
 #img-1{
     position: absolute;
     left: 800px;
+}
+
+#img-2{
+    position: absolute;
+    max-width: 35%;
+    max-height: 35%;
+    left: 200px;
+}
+
+#img-3{
+    position:absolute;
+    max-width: 25%;
+    max-height: 25%;
+    left: 800px;
+    margin-top: 50px;
+}
+
+#img-4{
+    position: absolute;
+    max-width: 30%;
+    max-height: 30%;
+    left: 300px;
+    margin-top: 20px;
+}
+
+#img-5{
+    position: absolute;
+    max-width: 25%;
+    max-height: 25%;
+    left: 800px;
+    margin-top: 20px;
+}
+
+#img-6{
+    position: absolute;
+    max-height: 60%;
+    max-width: 60%;
+    left: 200px;
+    margin-top: 10px;
+}
+
+#img-7{
+    position: absolute;
+    max-width: 25%;
+    max-height: 25%;
+    left: 800px;
+    margin-top: 30px;
+}
+
+#img-8{
+    position: absolute;
+    max-width: 25%;
+    max-height: 25%;
+    left: 300px;
+    margin-top: 20px;
+}
+
+#img-9{
+    position: absolute;
+    max-width: 30%;
+    max-height: 30%;
+    left: 750px;
+    margin-top: 30px;    
+}
+
+#img-10{
+    position: absolute;
+    max-width: 30%;
+    max-height: 30%;
+    left: 300px;
+    margin-top: 20px;    
+}
+
+#img-11{
+    position: absolute;
+    max-width: 15%;
+    max-height: 15%;
+    left: 800px;
+    margin-top: 30px;
+}
+
+#img-12{
+    position: absolute;
+    max-height: 200%;
+    max-width: 200;
+    left: 300px;
+    margin-top: 20px;
 }
