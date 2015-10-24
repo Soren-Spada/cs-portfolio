@@ -32,3 +32,159 @@ body{
     font-family:cursive;
     font-style:oblique;
 }
+
+#toc{
+    background-color:black;
+    margin-right:70%;
+}
+
+#toc-t{
+    color:white;
+    position: relative;
+    padding: 10px;
+    left: 100px;
+}
+
+#TableofContents{
+    color:white;
+}
+
+.header{
+    color:white;
+    text-align:center;
+}
+
+.subheader{
+    color:white;
+}
+
+p{
+    color:white;
+}
+
+#p1{
+    background-color:black;
+    border: 5px solid blue;
+    padding: 10px;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+#reasons-p{
+    margin-right: 10%;
+    padding: 10px;
+}
+
+#parts{
+    background-color:black;
+    border: 5px solid blue;
+    padding: 10px;
+    margin-right: 40%;
+    margin-left: 40%;
+    margin-top: 5%;
+}
+
+#p2{
+    background-color:black;
+    border: 5px solid blue;
+    padding: 10px;
+    margin-right: 50%;
+    margin-left: 10%;
+    margin-top: 3%;
+}
+
+#p4{
+    background-color:black;
+    border: 5px solid blue;
+    padding: 10px;
+    margin-right: 50%;
+    margin-left: 10%;
+    margin-top: 3%;
+}
+
+#p6{
+    background-color:black;
+    border: 5px solid blue;
+    padding: 10px;
+    margin-right: 50%;
+    margin-left: 10%;
+    margin-top: 3%;
+}
+
+#p8{
+    background-color:black;
+    border: 5px solid blue;
+    padding: 10px;
+    margin-right: 50%;
+    margin-left: 10%;
+    margin-top: 3%;
+}
+
+#p10{
+    background-color:black;
+    border: 5px solid blue;
+    padding: 10px;
+    margin-right: 50%;
+    margin-left: 10%;
+    margin-top: 3%;
+}
+
+#p12{
+    background-color:black;
+    border: 5px solid blue;
+    padding: 10px;
+    margin-right: 50%;
+    margin-left: 10%;
+    margin-top: 3%;
+}
+
+#p3{
+    background-color:black;
+    border: 5px solid blue;
+    padding: 10px;
+    margin-right: 10%;
+    margin-left: 50%;
+    margin-top: 3%;
+}
+
+#p5{
+    background-color:black;
+    border: 5px solid blue;
+    padding: 10px;
+    margin-right: 10%;
+    margin-left: 50%;
+    margin-top: 3%;
+}
+
+#p7{
+    background-color:black;
+    border: 5px solid blue;
+    padding: 10px;
+    margin-right: 10%;
+    margin-left: 50%;
+    margin-top: 3%;
+}
+
+#p9{
+    background-color:black;
+    border: 5px solid blue;
+    padding: 10px;
+    margin-right: 10%;
+    margin-left: 50%;
+    margin-top: 3%;
+}
+
+#p11{
+    background-color:black;
+    border: 5px solid blue;
+    padding: 10px;
+    margin-right: 10%;
+    margin-left: 50%;
+    margin-top: 3%;
+}
+
+#img-1{
+    position: absolute;
+    left: 800px;
+}
