@@ -1,0 +1,25 @@
+body{
+    background-color: gray;
+    text-align:center;
+}
+
+img{
+    width: 250px;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 40px;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 25px;
+    color: red;
+}
+
+h3{
+    color: blue;
+    position: absolute;
+    right: 48px;
+}

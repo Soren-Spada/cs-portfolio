@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	   <link rel="stylesheet" href="calc.css" type="text/css" />
+       <link rel="stylesheet" href="navbar.css" type="text/css" />
+		<title>Document</title>
+	</head>
+	<body>
+	    
+	<audio loop autoplay hidden preload>
+        <source src = "calc.mp3" type="audio/mpeg">
+        Your browser does not support this swag
+    </audio>
+	    
+          <ul id="navbar">
+            <li> <a href="index.html">Home</a> </li>
+            <li> <a href="hardware.html">Hardware</a> </li>
+            <li> <a href="calculator.html">Calculator</a></li>
+            <li> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">HTML/CSS</a> </li>
+          </ul>
+          
+          
+	    <div id="userInput">
+		<input type ="text" name="input1" style="width:50px;" id="input1">
+    <select id="dropdown">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="x">x</option>
+        <option value="/">/</option>
+        <option value="^">^</option>
+        <option value="sqrt">sqrt</option>
+        <option value="cbrt">cbrt</option>
+    </select>
+    <input type ="text" name="input2" style="width:50px;" id="input2">
+    <input type="button" value="Calculate" id="submitButton" />
+        </div>
+
+    <p id="answer">The Answer Is: <span id="display"></span></p>
+<script src="calc.js"></script>
+
+<table id="table">
+    <thead>
+        <tr>
+            <th>Symbol</th>
+            <th>What It Will Do</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>+</td>
+            <td>Add First Number with Second Number</td>
+        </tr>
+        <tr>
+            <td>-</td>
+            <td>Subtract Second Number from First Number</td>
+        </tr>
+        <tr>
+            <td>*</td>
+            <td>Multiply First Number with Second Number</td>
+        </tr>
+        <tr>
+            <td>/</td>
+            <td>Divide First Number by Second Number</td>
+        </tr>
+        <tr>
+            <td>^</td>
+            <td>Takes the First Number to the Power of the Second Number</td>
+        </tr>
+        <tr>
+            <td>sqrt</td>
+            <td>Takes the Square Root of the First Number</td>
+        </tr>
+        <tr>
+            <td>cbrt</td>
+            <td>Takes the Cube Root of the First Number</td>
+        </tr>
+    </tbody>
+
+	</body>
+</html>
