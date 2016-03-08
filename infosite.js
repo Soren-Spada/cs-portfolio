@@ -25,12 +25,12 @@ var info10 = document.getElementById("info10");
 
 
 item1.addEventListener("click", function(){
-    info1.innerHTML = "Most of the csgo skins with reptiles and monsters look super cool. The ak is probably the most useful firarms.";
+    info1.innerHTML = "Most of the csgo skins with reptiles and monsters look super cool. The ak is probably the most useful firarms in the game as its damage and accuracy are super high.";
 });
 
 
 item2.addEventListener("click", function(){
-    info2.innerHTML = "One, its a knife. Two its marable fade. Three it is the swaggiest thing to kill your enemies with";
+    info2.innerHTML = "One, its a knife. Two its marable fade. Three its a karambit, who wouldn't want one.";
 });
 
 
@@ -50,7 +50,7 @@ item5.addEventListener("click", function(){
 
 
 item6.addEventListener("click", function(){
-    info6.innerHTML = "The awp graphite is the most plain looking skins, but when in game, it looks beautiful. Any skins added on to it looks really good.";
+    info6.innerHTML = "The awp graphite is the most plain looking skins, but when in game, it looks beautiful. Any stickers added on to it looks really good.";
 });
 
 
@@ -60,15 +60,15 @@ item7.addEventListener("click", function(){
 
 
 item8.addEventListener("click", function(){
-    info8.innerHTML = "Its the pepe bizon with its pepe green color. This wilol truly make your weapons 'feel bad man'.";
+    info8.innerHTML = "Its the pepe bizon with its pepe green color. This will truly make your enemies 'feel bad man'.";
 });
 
 
 item9.addEventListener("click", function(){
-    info9.innerHTML = "The orion looks super basic, but is actually really unique. Something about the dots along with the orange and black contrast.";
+    info9.innerHTML = "The orion looks super basic, but is actually really unique. Something about the dots along with the orange and black contrast make my heart pound faster.";
 });
 
 
 item10.addEventListener("click", function(){
-    info10.innerHTML = "If you have the urge to mawl someone in counter-strike, the only way to do it is through the M4 howl. The only 'contraband skin in the game, its red shade design makes it the coolest looking skin in the game.";
+    info10.innerHTML = "If you have the urge to mawl someone in counter-strike, the only way to do it is through the M4 howl. The only 'contraband skin in the game, its shiny red design makes it the coolest looking skin in the game.";
 });
