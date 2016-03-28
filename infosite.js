@@ -40,7 +40,7 @@ item3.addEventListener("click", function(){
 
 
 item4.addEventListener("click", function(){
-    info4.innerHTML = "There are like 2 guns in the entire game with and entire white skin. It stands out so much and inspecting this weapon with the contrast of the environment color looks super cool.";
+    info4.innerHTML = "There are 2 guns in the entire game with and entire white skin. It stands out so much and inspecting this weapon with the contrast of the environment color looks super cool.";
 });
 
 
@@ -60,7 +60,7 @@ item7.addEventListener("click", function(){
 
 
 item8.addEventListener("click", function(){
-    info8.innerHTML = "Its the pepe bizon with its pepe green color. This will truly make your enemies 'feel bad man'.";
+    info8.innerHTML = "It is nicknamed pepe bizon with its pepe green color. This will truly make your enemies 'feel bad man'.";
 });
 
 
