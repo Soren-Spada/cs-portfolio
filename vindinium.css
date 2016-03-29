@@ -24,8 +24,53 @@ body{
     color: #00008B;
 }
 
-#heading{
+h1{
     text-align: center;
     color: white;
+    font-family: sans-serif;
+    font-size: 40px;
+    text-decoration: underline;
 }
 
+
+#gameguide{
+    text-align: center;
+    padding: 25px;
+    border: 10px solid navy;
+    margin-right: 50px;
+    margin-left: 50px;
+    background-image: url("https://image.freepik.com/free-vector/white-bokeh-background-in-bright-style_1048-377.jpg");
+}
+
+#vindiniumtitle{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div{
+    background-image: url("http://www.greenwallpaperhd.com/wp-content/uploads/Green%20Pattern/Green%20light%20twill%20background%20wallpaper.jpg");
+    font-size: 24px;
+    padding: 10px;
+    border: 10px solid navy;
+    text-align: center;
+    display: block;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+h3{
+    background-color: white;
+    padding: 25px;
+    border: 10px solid black;
+    margin: 25px;
+}
+
+#conclusion{
+   text-align: center;
+    padding: 25px;
+    border: 10px solid navy;
+    margin-right: 50px;
+    margin-left: 50px;
+    background-image: url("https://image.freepik.com/free-vector/white-bokeh-background-in-bright-style_1048-377.jpg"); 
+}

@@ -17,14 +17,155 @@
         </ul> 
         
         
-<h1 id="heading">???What Is Vindinium???</h1>
+<h1 id="heading"> ???What Is Vindinium??? </h1>
 
-<img src="https://i.imgsafe.org/479bbc1.png" alt="Vindinium Title">
+<img id="vindiniumtitle" src="https://i.imgsafe.org/479bbc1.png" alt="Vindinium Title">
 
-<h2>
-    Vindinium is a turn based 4 player game which runs on the input of the players' various computor programming languages. The objective of the game is to collect the most gold. Gold is collected by obtaining mines and holding them. The game is starts when each player is given a random color bot and then are placed on a randomized map. Each map has 3 parts. Obstacles, which play no role other than to add a wall a player must walk around, mines, which players need to collect, and taverns, which recovers a player's hit points. Each player starts with 100 hit points. Every turn the player moves they lose 1 hit point. Every mine the player captures they lose 20 hit points. If a player attacks another player they lose 20 hit points. If one player dies, his mines go to the person that attacked and killed him. Every 4 turns, a full rotation of 1 turn per person, 1 gold per mine goes to person that ownes them. After 1,200 rounds, the game ends with the winner having the most gold.
+<h2 id="gameguide">
+    Vindinium is a turn based 4 player game which runs on the input of the players' various computor programming languages. The objective of the game is to collect the most gold. Gold is collected by obtaining mines and holding them. The game is starts when each player is given a random color bot and then are placed on a randomized map. Each map has 3 parts. Obstacles, which play no role other than to add a wall a player must walk around, mines, which players need to collect, and taverns, which recovers a player's hit points. Each player starts with 100 hit points. Every turn the player moves they lose 1 hit point. Every mine the player captures they lose 20 hit points. If a player attacks another player they lose 20 hit points. If one player dies, his mines go to the person that attacked and killed him. Every 4 turns, a full rotation of 1 turn per person, 1 gold per mine goes to person that ownes them. After 1,200 rounds, the game ends with the winner having the most gold after 1200 rounds (300 full rotations).
 </h2>
 
+<h1> ???What Does Each Part of Code Mean??? </h1>
+
+<h3> <pre>
+        var myDir;
+        var myPos = [bot.yourBot.pos.x, bot.yourBot.pos.y];
+
+        var enemyBots = [];
+        if(bot.yourBot.id != 1) enemyBots.push(bot.bot1);
+        if(bot.yourBot.id != 2) enemyBots.push(bot.bot2);
+        if(bot.yourBot.id != 3) enemyBots.push(bot.bot3);
+        if(bot.yourBot.id != 4) enemyBots.push(bot.bot4);
+</pre>
+</h3>
+
+<div>
+        Set myDir to what you want and it will set bot.goDir to that direction at the end.  Unless it is "none". Basically, It sets your bot's direction, and tells your bot to move in that direction.
+</div>
+
+<h3><pre>
+    
+        var enemyMines = [];
+        if(bot.yourBot.id = 1) enemyMines = enemyMines.concat(bot.bot1mines) 
+        if(bot.yourBot.id = 2) enemyMines = enemyMines.concat(bot.bot2mines) 
+
+        var closestBot = enemyBots[0];
+        for (i=0; i < enemyBots.length; i++){
+             if(bot.findDistance(myPos, [closestBot.pos.x, closestBot.pos.y]) >
+             bot.findDistance(myPos, [enemyBots[i].pos.x, enemyBots[i].pos.y])) {
+                 closestBot = enemyBots[i]
+             }
+        }
+        
+</pre></h3>
+
+<div>
+    This code finds the distance between your poistion and the position of the enemy bots. Then, the code finds the closest bot. This gives you the variable "closestBot" to create a function.
+</div>
+
+<h3><pre>
+    var task;
+</pre></h3>
+
+<div>
+    This is a variable that allows the programmer to create a function to tell the bot WHAT to do.
+</div>
+
+<h3><pre>
+        if(bot.yourBot.life <= 40){
+            task = "low health";
+        }
+        
+        
+        // This code includes an attack function. 
+        else if(bot.yourBot.life > bot.enemyBots.life 
+                || bot.bot1.mineCount >= bot.yourBot.mineCount && bot.bot2.mineCount && bot.bot3.mineCount && bot.bot4.mineCount 
+                || bot.bot2.mineCount >= bot.yourBot.mineCount && bot.bot1.mineCount && bot.bot3.mineCount && bot.bot4.mineCount 
+                || bot.bot3.mineCount >= bot.yourBot.mineCount && bot.bot1.mineCount && bot.bot2.mineCount && bot.bot4.mineCount  
+                || bot.bot4.mineCount >= bot.yourBot.mineCount && bot.bot1.mineCount && bot.bot2.mineCount && bot.bot3.mineCount){
+            task = "attackRich";
+        }
+        
+        else{
+            task = "freemines";
+        }
+</pre></h3>
+
+<div>
+    These are the three tasks that my bot can act out. 
+    The 1st one is task "low health". The condition for this is whenever my bot's hit points is equal or less than 40. Whenever my bot satisfies this condition, he goes to a tavern to heal.
+    The 2nd one is task "attack rich". There are two conditions, either of which could be satisfied for the bot to perform this task. The first is when your bot's hit points is greater than your enemy's hitpoints. The second condition for this is long, as it takes into consideration whether you are bot 1, 2, 3, or 4, but the condition is fulfulled whenever an enemy bot has more mines than your bot. Whenever my bot satisfies this condition, he attacks the opposing player.
+    The final task is task "freemines". The only condition is that the 2 above conditions were not fulfilled. Then the bot will go and claim free mines.
+</div>
+
+
+<h3><pre>
+if(task === "low health"){
+            var closestTavern = bot.taverns[0];
+            for(i = 0; i < bot.taverns.length; i++) {
+                if(bot.findDistance(myPos, closestTavern) > 
+                   bot.findDistance(myPos, bot.taverns[i])) {
+                    closestTavern = bot.taverns[i];
+                }
+            }
+            console.log("Riperoni, no Healtheroni");
+            myDir = bot.findPath(myPos, closestTavern);
+        }
+        
+        
+        // this Code find the nearest freemine and sets myDir toward that direction.
+        if(task === "freemines") {
+            var closestMine = bot.freeMines[0];
+            for(i = 0; i < bot.freeMines.length; i++) {
+                if(bot.findDistance(myPos, closestMine) > bot.findDistance(myPos, bot.freeMines[i])) {
+                    closestMine = bot.freeMines[i];
+                }
+            }
+            console.log("Rushing Mid!");
+            myDir = bot.findPath(myPos, closestMine);
+        }
+        
+        
+        
+        if (task === "attackRich"){
+            var mostminesBot = enemyBots[0];
+            for (i = 0; i < enemyBots.length; i++){
+                if(bot.yourBot.mineCOunt < enemyBots[i].mineCount){
+                    mostminesBot = enemyBots[i];
+                }
+            }
+            console.log("Tec-9 Rush B");
+            myDir = bot.findPath(myPos [mostminesBot.pos.x, mostminesBot.pos.y]
+            );
+        }
+</pre></h3>
+
+<div>
+    Just as the code before talked about WHAT the code had to do, the AI needs to know HOW to do it. Thats what this code is. Each task has its own set of variables to force the bot in a certain direction. This will push the bot towards a tavern, player, or freemine.
+</div>
+
+<h3><pre>
+if(myDir === "none") {
+            console.log("Spinbot Enabled");
+            var rand = Math.floor(Math.random() * 4);
+            var dirs = ["north", "south", "east", "west"];
+            bot.goDir = dirs[rand];
+        } else {
+            bot.goDir = myDir;
+        }
+</pre></h3>
+
+<div>
+    This last piece of code just says that if I'm not going in any direction for whatever reason, go in a randomized direction.
+</div>
+
+<h1>
+    What did I learn? / Why is this Important?
+</h1>
+
+<h2 id="conclusion">
+    This entire project played an important role in learning the basics of Javascript. I mainly focused on if/if else/else statements and arrays. Using this I am able to create basic function. In the future projects, I can use these functions to create or model situations.
+</h2>
 
     </body>
 </html>
