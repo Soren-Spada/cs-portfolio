@@ -1,0 +1,15 @@
+body{
+    background-image: url(http://world-visits.com/wp-content/uploads/2011/11/World-Trade-Center-3.jpg);
+}
+
+h1{
+    text-align: center;
+}
+
+img{
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    padding: 30px;
+    
+}

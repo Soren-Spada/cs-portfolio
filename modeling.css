@@ -1,3 +1,131 @@
+body{
+    background-image: url("http://i328.photobucket.com/albums/l338/Bot_Seeran/rice_8_zpsf2maenhf.jpg");
+    background-attachment:fixed;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
 #heading{
     text-align: center;
+    font-family: fantasy;
+    font-size: 50px;
 }
+
+#subheading{
+    text-align: center;
+    font-family: fantasy;
+    font-size: 36px;
+    font-style: underline;
+}
+
+#RiceHome1{
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+#RiceHome2{
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+#RiceHome3{
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+#RiceHome4{
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.rice1{
+    text-align: center;
+}
+
+.hideMe{
+    border:2px solid black;
+    display:none;
+}
+
+img{
+    height:200px;
+}
+
+.container > *{
+    display: inline-block;
+    max-width: 30%;
+    vertical-align:middle;
+}
+
+.container{
+    text-align: center;
+}
+
+#riceBag{
+    text-align: center;
+}
+
+#riceMeasure{
+    text-align: center;
+}
+
+#riceWash{
+    text-align: center;
+}
+
+#riceStrain{
+    text-align: center;
+}
+
+#ricePot{
+    text-align: center;
+}
+
+#waterMeasure{
+    text-align: center;
+}
+
+#waterPour{
+    text-align: center;
+}
+
+#riceStove1{
+    text-align: center;
+}
+
+#riceStove2{
+    text-align: center;
+}
+
+#riceTimer{
+    text-align: center;
+}
+
+#riceBowl{
+    text-align: center;
+}
+

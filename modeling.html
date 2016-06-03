@@ -1,32 +1,235 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="navbar.css" type="text/css" />
-        <link rel="stylesheet" href="modeling.css" type="text/css" />
-        <meta charset="utf-8">
-        
-        <title> CS Models </title>
-        
-    </head>
-    <body>
 
-          <ul id="navbar">
-            <li> <a href="index.html">Home</a> </li>
-            <li> <a href="hardware.html">Hardware</a> </li>
-            <li> <a href="calculator.html">Calculator</a></li>
-            <li> <a href="infosite.html">List of Fav CS Skins</a></li>
-            <li> <a href="vindinium.html">Vindinium</a></li>
-            <li> <a href="modeling.html"></a></li>
-            <li> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">HTML/CSS</a> </li>
-          </ul>
+<head>
+    <link rel="stylesheet" href="navbar.css" type="text/css" />
+    <link rel="stylesheet" href="modeling.css" type="text/css" />
+    <meta charset="utf-8">
 
-<h1 id="heading">
-    Modeling With JavaScript
+    <title> Models With Computer Science </title>
+
+</head>
+
+<body>
+
+    <ul id="navbar">
+        <li> <a href="index.html">Home</a> </li>
+        <li> <a href="hardware.html">Hardware</a> </li>
+        <li> <a href="calculator.html">Calculator</a></li>
+        <li> <a href="infosite.html">List of Fav CS Skins</a></li>
+        <li> <a href="aagenerator.html">Vine Generator</a></li>
+        <li> <a href="vindinium.html">Vindinium</a></li>
+        <li> <a href="modeling.html">JavaScript Rice</a></li>
+        <li> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">HTML/CSS</a> </li>
+    </ul>
+
+    <h1 id="heading">
+    Models In Computer Science!
 </h1>
 
-<img src=""
+
+    <div class="container">
+        <img id="RiceHome1" src="http://i328.photobucket.com/albums/l338/Bot_Seeran/rice_zpsu1t0rjzi.jpg">
+
+        <div>
+            <h2 id="subheading" class="rice1">
+    What Am I Modeling?
+</h2>
+
+            <h3 id="RiceExplained" class="rice1">
+    Have you ever wondered how to make the perfect rice. Well here, I have modeled the making of a perfect batch of rice. By following the instructions, created with HTML, CSS, and JS, you can make your own virtual perfect rice!
+</h3>
+        </div>
+
+        <img id="RiceHome2" src="http://i328.photobucket.com/albums/l338/Bot_Seeran/rice_zpsu1t0rjzi.jpg">
+    </div>
 
 
-    </body>
-    
+    <div class="container">
+        <img src="http://i328.photobucket.com/albums/l338/Bot_Seeran/rice2_zpsnwuqsuhm.jpg">
+
+        <div>
+            <h2 id="subheading">
+    Why Is This Important?
+</h2>
+
+
+            <h3 id="RiceExplained">
+    Every expeditions, we learn a different thing. Weeks 1&2 mainly focused on the basics of HTML and CSS. This includes parts of webpages, text, images, colors, styles, and others. Weeks 3&4 focus on refining our skills with HTML and CSS along with learning the basics of JavaScipt (JS). This includes basic functions and statements, enough to create a calculator, an infopage, and a navigation bar. Our current weeks, 5&6, focus on refining our JS skills, starting with creating code for an AI in a game. Now creating our own model. In the future, I can use this information to design tutorials, recipes, or, if I get really good, engineering designs.
+</h3>
+
+        </div>
+        <img src="http://i328.photobucket.com/albums/l338/Bot_Seeran/rice2_zpsnwuqsuhm.jpg">
+    </div>
+
+
+
+
+    <h2 id="subheading">
+    How To Make Rice With JavaScript
+</h2>
+
+
+
+
+    <!--Origional Div. Will be replaced after being clicked on by the following divs. Click function.-->
+    <div id="riceBag">
+        <h3 id="RiceExplained"> To start with the making of our virtual rice, click the bag to open the bag of rice. </h3>
+        <img src="http://i328.photobucket.com/albums/l338/Bot_Seeran/ricebag_zpsnifwy8nm.jpg" align=middle>
+    </div>
+
+
+
+
+    <!--Step 0. Measure rice. Drag and drop function-->
+    <div id="riceMeasure" class="hideMe">
+        <h3 id="Step"> For this virtual rice, we will be making 1 cup of it. Drag the measuring cup to the rice bag. </h3>
+        <div id="riceMeasure1">
+            <img id="1cup" draggable="true" ondragstart="drag(event)" src="http://i328.photobucket.com/albums/l338/Bot_Seeran/1cup_zpscvpdt7q6.jpg" align=middle>
+        </div>
+
+        <!--This is what the above "div" will be dropped into.-->
+        <div id="riceMeasure2">
+            <img id="bag" ondrop="drop(event)" ondragover="allowDrop(event)" src="http://i328.photobucket.com/albums/l338/Bot_Seeran/ricebag_zpsnifwy8nm.jpg" align=middle>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!--Step 1. Wash the rice. Drag and Drop function-->
+    <div id="riceWash" class="hideMe">
+        <h3 id="Step"> Now we have to wash the outside of the rice. Drag the rice into the bowl of water to clean it. </h3>
+        <div id="ricewash1">
+            <img id="whiterice" draggable="true" ondragstart="drag(event)" src="http://i328.photobucket.com/albums/l338/Bot_Seeran/whiterice_zpscnsj55m0.jpg" align=middle>
+        </div>
+
+        <!--This is what the above "div" will be dropped into.-->
+        <div id="ricewash2">
+            <img id="bowlofwater" ondrop="drop(event)" ondragover="allowDrop(event)" src="http://i328.photobucket.com/albums/l338/Bot_Seeran/bowlofwater_zpscxtkwlud.jpg" align=middle>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!--Step 2. Strain the rice and dirty water. Drag and Drop function.-->
+    <div id="riceStrain" class="hideMe">
+        <h3 id="Step"> Good Job! After we wash the outside of the rice, we must put it through a strainer to take out the dirty water and keep the clean rice. Drag the water rice mixture to the strainer. </h3>
+        <div id="riceStrain1">
+            <img id="dirtyrice" draggable="true" ondragstart="drag(event)" src="http://i328.photobucket.com/albums/l338/Bot_Seeran/rice_zpsa4hvpvss.jpg" align=middle>
+        </div>
+
+
+        <!--This is what the above "div" will be dropped into.-->
+        <div id="ricetrain2">
+            <img id="strainer" ondrop="drop(event)" ondragover="allowDrop(event)" src="http://i328.photobucket.com/albums/l338/Bot_Seeran/strainer_zps6kvosrko.png" align=middle>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!--Step 3. Put the cleaned rice in the pot to be boiled. Drag and Drop function.-->
+    <div id="ricePot" class="hideMe">
+        <h3 id="Step"> Now put the cleaned rice into the pot!</h3>
+        <div id="ricePot1">
+            <img id="ricestrainer" draggable="true" ondragstart="drag(event)" src="http://i328.photobucket.com/albums/l338/Bot_Seeran/rice_zpsjznerobw.jpg">
+        </div>
+
+        <!--This is what the above "div" will be dropped into.-->
+        <div id="ricePot2">
+            <img id="pot" ondrop="drop(event)" ondragover="allowDrop(event)" src="http://i328.photobucket.com/albums/l338/Bot_Seeran/pot_zpsjc5ypunp.jpg">
+        </div>
+    </div>
+
+
+
+
+
+
+    <!--Step 4. Measure 1 1/2 cups of water. Drag and drop function.-->
+
+    <div id="waterMeasure" class="hideMe">
+        <h3 id="Step"> Get some fresh water to boil the rice. For every 1 cup of rice, use 1 1/2 cup of water. Drag the cup into the sink. </h3>
+
+        <div id="waterMeasure1">
+            <img id="1/2cup" draggable="true" ondragstart="drag(event)" src="http://i328.photobucket.com/albums/l338/Bot_Seeran/measuringcup_zpsm8nu7vcl.jpg">
+        </div>
+
+
+        <!--This is what the above "div" will be dropped into.-->
+        <div id="waterMeasure2">
+            <img id="sink" ondrop="drop(event)" ondragover="allowDrop(event)" src="http://i328.photobucket.com/albums/l338/Bot_Seeran/sink_zpsid69qkk6.jpg">
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <!--Step 5. Pour water into pot. Drag and drop function-->
+    <div class="hideMe" id="waterPour">
+        <h3 id="Step"> Pour your measured fresh water into the pot with the rice. Drag and Drop the water into the pot. </h3>
+        <div id="waterPour1">
+            <img id="water" draggable="true" ondragstart="drag(event)" src="http://i328.photobucket.com/albums/l338/Bot_Seeran/bowlofwater_zpscxtkwlud.jpg">
+        </div>
+
+
+        <!--This is what the above "div" will be dropped into.-->
+        <div id="waterPour2">
+            <img id="pot" ondrop="drop(event)" ondragover="allowDrop(event)" src="http://i328.photobucket.com/albums/l338/Bot_Seeran/sink_zpsid69qkk6.jpg">
+        </div>
+    </div>
+
+
+
+    <!--Step 6. Boil the Water!-->
+    <div id="riceStove1" class="hideMe">
+        <h3 id="RiceExplained"> Press the Switch to turn the stove on High. </h3>
+        <img src="http://i328.photobucket.com/albums/l338/Bot_Seeran/p_zpsk4h3vce9.jpg" align=middle>
+    </div>
+
+
+
+
+    <!--Step 7. Stop Boiling the water and put the heat on low!-->
+    <div id="riceStove2" class="hideMe">
+        <h3 id="RiceExplained"> Press the Switch to turn the stove on low, now that the water has boiled. </h3>
+        <img src="http://i328.photobucket.com/albums/l338/Bot_Seeran/p_zpsk4h3vce9.jpg" align=middle>
+    </div>
+
+
+
+    <!--Step 8. Wait.-->
+    <div id="riceTimer" class="hideMe">
+        <h3 id="RiceExplained"> Now just wait 15 minutes and you are done! Click the timer to finish up! </h3>
+        <img src="http://i328.photobucket.com/albums/l338/Bot_Seeran/timer_zpsmlatuwoa.jpeg">
+    </div>
+
+
+
+    <!--Step 9. Eat.-->
+    <div id="riceBowl" class="hideMe">
+        <h3 id="RiceExplained"> YOU DID IT!!!</h3>
+        <img src="http://i328.photobucket.com/albums/l338/Bot_Seeran/riceboql_zpsvtk6ytwr.png">
+    </div>
+
+    <script type="text/javascript" src="modeling.js"></script>
+
+</body>
+
 </html>
