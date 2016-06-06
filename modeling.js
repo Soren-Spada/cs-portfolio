@@ -1,4 +1,5 @@
 // JavaScript File
+// these are the variables that are being
 var riceBag = document.getElementById("riceBag");
 var riceMeasure = document.getElementById("riceMeasure");
 var riceWash = document.getElementById("riceWash");
@@ -17,47 +18,56 @@ riceBag.addEventListener("click", function(){
     riceBag.className = "hideMe";
 });
 
+// Using this drop function, you can drag and drop one div into the other, and thedic that surrounds those two divs is switched out with the next.
 riceMeasure.addEventListener("drop", function(){
     riceWash.className = "";
     riceMeasure.className = "hideMe";
     
 });
 
+// Using this drop function, you can drag and drop one div into the other, and thedic that surrounds those two divs is switched out with the next.
 riceWash.addEventListener("drop", function(){
     riceStrain.className = "";
     riceWash.className = "hideMe";
 });
 
+// Using this drop function, you can drag and drop one div into the other, and thedic that surrounds those two divs is switched out with the next.
 riceStrain.addEventListener("drop", function(){
     ricePot.className = "";
     riceStrain.className = "hideMe";
 });
 
+// Using this drop function, you can drag and drop one div into the other, and thedic that surrounds those two divs is switched out with the next.
 ricePot.addEventListener("drop", function(){
     waterMeasure.className = "";
     ricePot.className = "hideMe";
 });
 
+// Using this drop function, you can drag and drop one div into the other, and thedic that surrounds those two divs is switched out with the next.
 waterMeasure.addEventListener("drop", function(){
     waterPour.className = "";
     waterMeasure.className = "hideMe";
 });
 
+// Using this drop function, you can drag and drop one div into the other, and thedic that surrounds those two divs is switched out with the next.
 waterPour.addEventListener("drop", function(){
     riceStove1.className = "";
     waterPour.className = "hideMe";
 });
 
+// Using this click function, this picture along with the text will disappear, and the new div filled with text and pictures will pop up.
 riceStove1.addEventListener("click", function(){
     riceStove2.className = "";
     riceStove1.className = "hideMe";
 });
 
+// Using this click function, this picture along with the text will disappear, and the new div filled with text and pictures will pop up.
 riceStove2.addEventListener("click", function(){
     riceTimer.className = "";
     riceStove2.className = "hideMe";
 });
 
+// Using this click function, this picture along with the text will disappear, and the new div filled with text and pictures will pop up.
 riceTimer.addEventListener("click", function(){
     riceBowl.className = "";
     riceTimer.className = "hideMe";
