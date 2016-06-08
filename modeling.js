@@ -12,6 +12,8 @@ var riceStove2 = document.getElementById("riceStove2");
 var riceTimer = document.getElementById("riceTimer");
 var riceBowl = document.getElementById("riceBowl");
 
+
+
 // Using this click function, this picture along with the text will disappear, and the new div filled with text and pictures will pop up.
 riceBag.addEventListener("click", function(){
     riceMeasure.className = "";
